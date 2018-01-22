@@ -92,8 +92,19 @@ document.addEventListener('DOMContentLoaded', ()=> {
   }
   let footer = document.createElement("div");
   footer.classList.add("footer");
-  footer.classList.add("blankSpace");
   root.appendChild(footer);
+  let footText = document.createTextNode("Created by Daniel Appel");
+  footer.appendChild(footText);
+  let github = document.createElement("a");
+  github.href = "https://github.com/danamansana";
+  footer.appendChild(github);
+  let gitText = document.createElement("GitHub");
+  github.appendChild(gitText);
+  let linked = document.createElement("a");
+  footer.appendChild(linked);
+  linked.href = "http://linkedin.com/in/daniel-appel-9b7937151/";
+  footer.appendChild(linked);
+  linked.appendChild(document.createTextNode("LinkedIn"));
   let interval;
   let title = document.createElement("div");
   title.classList.add("Button");
