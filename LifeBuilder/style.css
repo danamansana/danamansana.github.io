@@ -63,6 +63,9 @@ html {
 .footer {
   height: 10%;
   background-color: transparent;
+  color: gold;
+  justify-content: space-around;
+  display: flex;
 }
 
 .middle {
